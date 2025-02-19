@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <div className="absolute left-0 bottom-0 "><img src="https://elito-next.netlify.app/images/slider/line-1.png" alt=""/></div>
         <div className="absolute right-0 top-0 "><img src="https://elito-next.netlify.app/images/slider/line-2.png" alt=""/></div>
       </div>
+      <Hero />
     </>
   );
 }

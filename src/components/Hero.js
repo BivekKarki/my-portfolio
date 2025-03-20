@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import profile from "@/assets/image/bivek.jpeg";
 
 export default function Hero() {
   return (
@@ -8,14 +9,14 @@ export default function Hero() {
       {/* Profile Section */}
       <div className="max-w-3xl text-center">
         <div className="relative w-36 h-36 mx-auto mb-4">
-          <div className="absolute inset-0 bg-[#1f2937] rounded-lg w-36 h-36 top-2 left-2"></div>
           <Image
-            src="/profile.jpg" // Replace with your profile image path
+            src={profile} 
             width={144}
             height={144}
             alt="Bivek"
             className="rounded-lg border-2 border-[#1f2937]"
           />
+          <div className="absolute inset-0 bg-[#1f2937] rounded-lg w-36 h-36 top-2 left-2"></div>
         </div>
 
         <h1 className="text-4xl font-bold flex items-center justify-center gap-2">
@@ -70,6 +71,7 @@ export default function Hero() {
           ))}
         </div>
       </div>
+      
     </section>
   );
 }

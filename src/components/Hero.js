@@ -1,23 +1,12 @@
-'use client'
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import profile from "@/assets/image/bivek.jpeg";
-import { motion } from "framer-motion";
 
-const FloatingIcon = ( src, alt, className ) => (
-  <motion.div
-    className={`absolute bg-white p-5 rounded-2xl shadow-md ${className}`}
-    animate={{ y: [0, -10, 0] }}
-    transition={{ repeat: Infinity, duration: 3, ease: 'linear' }}
-  >
-    <Image src={src} alt={alt} width={50} height={50} />
-  </motion.div>
-);
 
 export default function Hero() {
   return (
-    <section className="container mx-auto bg-[#121212] text-white min-h-screen flex items-center justify-center px-5 py-24">
+    <section className="container mx-auto bg-[#121212] text-white flex items-center justify-center px-5 h-full">
       {/* Profile Section */}
       <div className="flex justify-between">
         <div className="md:w-1/2 w-full">
@@ -47,46 +36,20 @@ export default function Hero() {
         </div>
     
     <div className="md:w-1/2 w-full">
-    <div className="relative flex justify-center items-center h-screen bg-gray-100">
-      {/* Hero Image */}
-      <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
-        <Image
-          src={profile}
-          alt="Hero Image"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-full shadow-lg"
+      <div className="flex items-center justify-center">
+            <div className="relative">
+              <div className="absolute -right-6 -bottom-6 w-[300px] h-[350px] bg-gray-700 border-4 border-gray-900"></div>
+
+              <div className="relative w-[300px] h-[350px] border-4 border-gray-900">
+                <Image
+                  src={profile} 
+                  alt="Mountain"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
           
-        />
-        
-        {/* Floating Icons */}
-        <FloatingIcon src={profile} alt="Photoshop" className="top-10 left-0" />
-        <FloatingIcon src={profile} alt="Illustrator" className="top-10 right-0" />
-        <FloatingIcon src={profile} alt="Diamond" className="bottom-0 right-10" />
-      </div>
-      
-      {/* Project Count */}
-      <motion.div
-        className="absolute bottom-5 left-0 bg-white px-5 py-3 rounded-full flex items-center shadow-md"
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 3, ease: 'linear' }}
-      >
-        <div className="text-center">
-          <h3 className="text-2xl font-bold">1500+</h3>
-          <p className="text-gray-600">Complete Projects</p>
-        </div>
-      </motion.div>
-    </div>
-    {/* <div className="relative w-36 h-36 mx-auto mb-4">
-          <Image
-            src={profile} 
-            width={144}
-            height={144}
-            alt="Bivek"
-            className="rounded-lg border-2 border-[#1f2937]"
-          />
-          <div className="absolute inset-0 bg-[#1f2937] rounded-lg w-36 h-36 top-2 left-2"></div>
-        </div> */}
     </div>
         
 

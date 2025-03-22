@@ -19,7 +19,7 @@ const TechStack = () => {
       <section className='bg-[#191919] py-16'>
         <div className='container mx-auto'>
             <div className='text-center mb-20'>
-                <h1 className='text-5xl font-bold text-white mb-8'>Tech Stack</h1>
+                <h1 className='text-5xl font-bold text-white mb-6'>Tech Stack</h1>
                 <p className='text-3xl text-[#A7A7A7]'> Technologies I've been working with recently</p>
             </div>
             <div className='flex flex-wrap justify-center gap-8 md:gap-20 md:w-2/3 mx-auto'>

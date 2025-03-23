@@ -43,8 +43,8 @@ export default function Hero() {
         {/* Right Image */}
         <div className="md:w-1/2 flex justify-center">
           <div className="relative mx-auto w-[250px] sm:w-[300px] h-[320px] sm:h-[350px]">
-            <div className="absolute -right-6 -bottom-6 w-full h-full bg-gray-700 border-4 border-gray-900"></div>
-            <div className="relative w-full h-full border-4 border-gray-900">
+            <div className="absolute -right-3 md:-right-6 -bottom-6 rounded-lg w-full h-full bg-gray-700 border-4 border-gray-900"></div>
+            <div className="relative -left-3 md:left-0 w-full h-full border-4 border-gray-900">
               <Image
                 src={profile} 
                 alt="Bivek's Profile"
@@ -55,6 +55,8 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
+      
       
       </div>
     </section>

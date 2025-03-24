@@ -16,7 +16,7 @@ const TechStack = () => {
 
   return (
     <>
-      <section className='bg-[#191919] py-16'>
+      <section className='bg-[#191919] py-16 px-6 md:px-12'>
         <div className='container mx-auto'>
             <div className='text-center mb-20'>
                 <h1 className='text-5xl font-bold text-white mb-6'>Tech Stack</h1>

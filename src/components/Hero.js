@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import profile from "@/assets/image/bivek.jpg";
+import Link from "next/link";
 
 
 export default function Hero() {
@@ -32,10 +33,14 @@ export default function Hero() {
           </p>
 
           <div className="mt-6 flex justify-center md:justify-start gap-5 text-2xl">
-            <FaTwitter className="hover:text-blue-500 cursor-pointer" />
-            <FaGithub className="hover:text-gray-400 cursor-pointer" />
-            <FaLinkedin className="hover:text-blue-700 cursor-pointer" />
+            <Link href="https://github.com/BivekKarki" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="hover:text-gray-400 cursor-pointer" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/bivek-karki-396409172/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="hover:text-blue-700 cursor-pointer" />
+            </Link>
           </div>
+
         </div>
 
         {/* Right Image */}

@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <>
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-black shadow-md" : "bg-transparent"}`}
     >
       <nav className="container mx-auto flex items-center justify-between p-4 lg:px-10 md:justify-between">
         <Link href="/" className="flex items-center space-x-2">
@@ -64,8 +64,8 @@ export default function Navbar() {
 
           {/* Resume Button */}
           <a
-            href="/resume.pdf"
-            download
+            href="/BivekKarki_Resume_Frontenddeveloper.pdf"
+            download="BivekKarki_Resume_Frontenddeveloper.pdf"
             className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition"
           >
             Resume ↓
@@ -85,8 +85,8 @@ export default function Navbar() {
 
         {/* Desktop Resume Button */}
         <a
-          href="/resume.pdf"
-          download
+          href="/BivekKarki_Resume_Frontenddeveloper.pdf"
+          download="BivekKarki_Resume_Frontenddeveloper.pdf"
           className="hidden md:block bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition"
         >
           Resume ↓

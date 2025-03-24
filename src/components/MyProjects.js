@@ -89,7 +89,10 @@ const MyProjects = () => {
             <div key={project.id} className={`bg-[#1E293B] rounded-xl flex flex-col md:flex-row gap-6 ${
               project.id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
             }`}>
-              <div className='bg-[#374151] rounded-l-xl p-12 w-full md:w-1/2'>
+
+              <div className={`bg-[#374151]  p-12 w-full md:w-1/2 ${
+              project.id % 2 === 0 ? "rounded-r-xl" : "rounded-l-xl"
+            }`}>
                 <Image
                   src={project.image}
                   alt={project.title}

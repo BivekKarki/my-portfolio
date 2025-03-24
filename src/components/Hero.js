@@ -8,8 +8,6 @@ export default function Hero() {
   return (
     <>
     
-
-
 <section className="container mx-auto bg-[#121212] text-white flex items-center justify-center px-5 md:h-full">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full gap-10 py-20">
         {/* Left Content */}

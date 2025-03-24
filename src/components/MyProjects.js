@@ -65,7 +65,7 @@ const MyProjects = () => {
 
   return (
     <>
-        <section className='bg-[#030712] py-16'>
+        {/* <section className='bg-[#030712] py-16'>
         <div className='container mx-auto'>
             <div className='text-center mb-20'>
                 <h1 className='text-5xl font-bold text-white mb-6'>Recent Work</h1>
@@ -76,14 +76,15 @@ const MyProjects = () => {
             </div>
         </div>
        
-      </section> 
+      </section>  */}
 
-      <section className="bg-[#0F172A] text-white py-12 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-center text-xl md:text-2xl font-semibold mb-8">
-          Some of the noteworthy projects I have built:
-        </h2>
-        <div className="grid grid-cols-1 gap-8">
+      <section className="bg-[#030712] py-16 px-6 md:px-12">
+      <div className="container mx-auto">
+        <div className='text-center mb-20'>
+            <h1 className='text-5xl font-bold text-white mb-6'>Recent Work</h1>
+            <p className='text-3xl text-[#A7A7A7]'> Things I built so far</p>
+        </div>
+        <div className="grid grid-cols-1 gap-8 text-white">
           {projects.map((project) => (
             <div key={project.id} className={`bg-[#1E293B] rounded-xl flex flex-col md:flex-row gap-6 ${
               project.id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
@@ -99,8 +100,8 @@ const MyProjects = () => {
               </div>
               
               <div className="flex-1 p-12">
-                <h3 className="text-lg font-semibold">{project.title}</h3>
-                <p className="text-gray-400 text-sm mt-2">{project.description}</p>
+                <h3 className="text-xl font-semibold">{project.title}</h3>
+                <p className="text-gray-400 text-lg mt-2">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.technologies.map((tech, index) => (
                     <span
@@ -114,7 +115,7 @@ const MyProjects = () => {
                 <div className="mt-4">
                   <a
                     href={project.link}
-                    className="text-blue-400 text-sm flex items-center gap-2 hover:underline"
+                    className="text-blue-400 text-lg  flex items-center gap-2 hover:underline"
                   >
                     Visit Project →
                   </a>

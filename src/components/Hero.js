@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
-import profile from "@/assets/image/bivek.jpeg";
+import profile from "@/assets/image/bivek.jpg";
 
 
 export default function Hero() {

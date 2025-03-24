@@ -4,6 +4,7 @@ import line1 from "@/assets/image/line-1.png";
 import line2 from "@/assets/image/line-2.png";
 import TechStack from "@/components/TechStack";
 import MyProjects from "@/components/MyProjects";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
       <TechStack />
       <MyProjects />
+      <GetInTouch />
     </>
   );
 }

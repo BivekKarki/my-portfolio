@@ -15,7 +15,7 @@ export default function Home() {
         <div className="absolute right-0 top-0 -z-10"><svg width="752" height="747" viewBox="0 0 752 747" fill="none"><g opacity="0.45" filter="url(#filter0_f_39_4394)"><circle cx="647.5" cy="99.5" r="247.5" className="bg-[#48c5ea]"></circle></g><defs><filter id="filter0_f_39_4394" x="0" y="-548" width="1295" height="1295" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB"><feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_39_4394"></feGaussianBlur></filter></defs></svg></div>
         <div className="absolute right-0 top-0 w-full h-full z-10"><Image src={line2} alt="line2" fill/></div>
         {/* <div className="absolute left-0 bottom-0 w-full h-full z-10"><Image src={line1} alt="line1" fill/></div> */}
-        <div className="relative">
+        <div className="relative h-full z-10">
           <Hero />
         </div>
       </div>

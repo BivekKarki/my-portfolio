@@ -5,7 +5,9 @@ import profile from "@/assets/image/bivek.jpg";
 import Link from "next/link";
 
 
+
 export default function Hero() {
+  
   return (
     <>
     

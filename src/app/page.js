@@ -5,6 +5,7 @@ import line2 from "@/assets/image/line-2.png";
 import TechStack from "@/components/TechStack";
 import MyProjects from "@/components/MyProjects";
 import GetInTouch from "@/components/GetInTouch";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <TechStack />
       <MyProjects />
       <GetInTouch />
+      <Footer />
     </>
   );
 }
